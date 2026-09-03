@@ -36,9 +36,5 @@ yarn-error.log*
 # typescript
 next-env.d.ts
 /dist/
-/outputs/
-/work/
-/deploy/
-/public/pdf.worker.min.mjs
 *.zip
 *.tsbuildinfo
