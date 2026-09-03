@@ -133,6 +133,30 @@ textarea:focus-visible {
   gap: 20px;
 }
 
+.github-link {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 13px;
+  border: 1px solid #343844;
+  border-radius: 9px;
+  background: #171920;
+  color: #dfe2e9;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: border-color 140ms ease, background 140ms ease, color 140ms ease, transform 140ms ease;
+}
+
+.github-link:hover {
+  border-color: #596071;
+  background: #20232c;
+  color: white;
+  transform: translateY(-1px);
+}
+
 .plain-link {
   color: var(--muted);
   font-size: 13px;
@@ -804,6 +828,14 @@ textarea:focus-visible {
   .brand-copy { display: none; }
   .header-actions { gap: 11px; }
   .plain-link { display: none; }
+
+  .github-link {
+    width: 38px;
+    min-height: 38px;
+    padding: 0;
+  }
+
+  .github-link span { display: none; }
 
   .privacy-status {
     min-height: 38px;
