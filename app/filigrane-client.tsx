@@ -50,6 +50,21 @@ const VILIGUE_HEADS = [
   "head-10-uniforme.webp",
 ];
 
+function GithubMark() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 16 16"
+      fill="currentColor"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.53-.49-.33-.86-.82-1.09-.82-1.09-.66-.45.05-.44.05.74.05 1.13.76 1.13.76.66 1.12 1.73.8 2.15.61.07-.48.26-.8.47-.98-1.6-.18-3.28-.8-3.28-3.55 0-.79.28-1.43.74-1.93-.07-.18-.32-.91.07-1.9 0 0 .6-.19 1.97.74A6.8 6.8 0 0 1 8 3.93c.61 0 1.23.08 1.8.24 1.36-.93 1.96-.74 1.96-.74.39.99.14 1.72.07 1.9.46.5.74 1.15.74 1.93 0 2.76-1.68 3.37-3.29 3.55.26.22.49.66.49 1.34 0 .97-.01 1.75-.01 1.99 0 .21.14.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+    </svg>
+  );
+}
+
 function formatBytes(size: number) {
   if (size < 1024 * 1024) return `${Math.max(1, Math.round(size / 1024))} Ko`;
   return `${(size / (1024 * 1024)).toFixed(size < 10 * 1024 * 1024 ? 1 : 0)} Mo`;
@@ -484,6 +499,16 @@ export default function FiligraneClient() {
           </span>
         </a>
         <div className="header-actions">
+          <a
+            className="github-link"
+            href="https://github.com/Viligue/viligue-filigrane"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le code source de Viligue Filigrane sur GitHub"
+          >
+            <GithubMark />
+            <span>GitHub</span>
+          </a>
           <a className="plain-link" href="/">Retour au site</a>
           <div className="privacy-status" role="status">
             <span className="status-dot" aria-hidden="true" />
